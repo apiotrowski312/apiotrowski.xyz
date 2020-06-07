@@ -17,7 +17,7 @@ disqusShortname = "yourdiscussshortname"
     author = "Aleksander Piotrowski"
     info = "DevOps/System Engineer with some Golang skills"
     description = "Personal site. I am writing mainly about Linux, Contenerization and Golang topics."
-    keywords = "blog,developer,personal"
+    keywords = "developer,personal,golang"
     avatarurl = "images/AleksanderPiotrowski.jpg"
 
     favicon_32 = "/img/favicon-32x32.png"
