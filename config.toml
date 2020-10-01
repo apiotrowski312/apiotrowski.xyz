@@ -4,20 +4,15 @@ theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
+dateformat = "02.01.2006"
+
 paginate = 20
-canonifyurls = true
-
-pygmentsstyle = "bw"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
-disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "Aleksander Piotrowski"
     info = "DevOps/System Engineer with some Golang skills"
     description = "Personal site. I am writing mainly about Linux, Contenerization and Golang topics."
-    keywords = "developer,personal,golang"
+    keywords = "blog,developer,golang,linux"
     avatarurl = "images/AleksanderPiotrowski.jpg"
 
     favicon_32 = "/img/favicon-32x32.png"
@@ -30,8 +25,7 @@ disqusShortname = "yourdiscussshortname"
 
     rtl = false
 
-    math = true
-    custom_css = ["css/custom.css"]
+    math = false
 
 # Social links
 [[params.social]]
@@ -46,11 +40,7 @@ disqusShortname = "yourdiscussshortname"
     url = "https://www.linkedin.com/in/aleksander-piotrowski-266a8519b/"
 
 # Menu links
-#[[menu.main]]
-#    name = "Blog"
-#    weight = 1
-#    url  = "/posts/"
-#[[menu.main]]
-#    name = "About"
-#    weight = 2
-#    url = "/about/"
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
