@@ -1,7 +1,7 @@
 ---
-draft: true
-title: "Start of the Great Adventure - Mastering vim - part 1"
-description: "Add here something"
+draft: false
+title: "The start of a Great Adventure - Mastering vim - part 1"
+description: "Introduction to my Vim learning blog post series"
 date: 2020-10-01T16:24:48+02:00
 slug: ""
 tags: ["vim"]
