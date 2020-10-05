@@ -22,11 +22,13 @@ I want to simply keep track of my progress while I am going deeper and deeper in
 
 ## What's the plan?
 
-First of all, in order to learn something I know I have to use it on my daily basis. That is why every new post in this blog will be written with power of Vim, also I will start with a simple message bot for my Facebook account.
+First of all, in order to learn something I know I have to use it on my daily basis. That is why every new post in this blog will be written with power of Vim, ~~also I will start with a simple message bot for my Facebook account.~~
 
-I did ditch the messenger app a long time ago, as I found it time consuming and pretty distracting. However, from time to time somebody's texting me there with an important message (I don't get why would you use messenger to ask somebody about something urgent?!?!?), so I thought that it will be a great place to start my learning. 
+~~I did ditch the messenger app a long time ago, as I found it time consuming and pretty distracting. However, from time to time somebody's texting me there with an important message (I don't get why would you use messenger to ask somebody about something urgent?!?!?), so I thought that it will be a great place to start my learning.~~
 
-I will build the **Messenger bot** that will ask the person who sent me a message if it is urgent, if so, then the bot will send me a notification.
+~~I will build the **Messenger bot** that will ask the person who sent me a message if it is urgent, if so, then the bot will send me a notification.~~
+
+> As I found out it is not possible to do such thing, so I ditched idea of messenger bot, more information will be provided in next blog post  
 
 Sounds like a cool little project I will be able to finish in a couple of evenings. I will do all programming in Go as I also want to develop in this language. 
 
