@@ -1,6 +1,6 @@
 ---
 draft: true
-title: "Vim Setup for Blogging - Mastering Vim 2"
+title: "Customizing neovim for markdown blog post - Mastering Vim 2"
 description: ""
 date: 2020-10-05T10:31:11+02:00
 slug: ""
@@ -13,17 +13,19 @@ disable_comments: true
 <!-- vim-markdown-toc GFM -->
 
 * [Better version of vim](#better-version-of-vim)
-    * [Basic config](#basic-config)
-    * [Plugin manager](#plugin-manager)
+	* [Basic config](#basic-config)
+	* [Plugin manager](#plugin-manager)
 * [Spellchecker](#spellchecker)
 * [Thesaurus synonyms](#thesaurus-synonyms)
-* [Markdown support](#markdown-support)
+* [Markdown TOC](#markdown-toc)
+* [Undo and redo inside interactive mode](#undo-and-redo-inside-interactive-mode)
 * [Conclusion](#conclusion)
 
 <!-- vim-markdown-toc -->
 
 Today post will cover topic: "Vim for markdown".
 Firstly I will write a bit about neovim, then I will show you few plugins and shortcuts I found very useful for writing post in Markdown
+
 
 ### Better version of vim
 
@@ -80,9 +82,41 @@ Another useful shortcuts are:
 - `zw` `zuw` `zg` `zug` - add/remove word from wrong/good word list
 If you want to learn more commands for this tool, just use `:help spell` to call manual. 
 
+Spell utility doesn't require any plugin as it is build into nvim, just paste those three lines into *init.vim*
+```bash
+autocmd FileType markdown setlocal spell
+set spelllang=en
+hi SpellBad ctermfg=white ctermbg=red
+```
+First two lines are require to spellchecker work, last line was added to customize how mistakes look inside editor. By default errors in my neovim were highlighted with pink/purple color and I find the red highlight more readable for me.
+
 ### Thesaurus synonyms
 
-### Markdown support
+After installing plugin (Already done in Plugin Manager step) the only think you need to know are shortcuts:
+```bash
+<Leader>cs
+```
+
+> **INFO**:
+> Leader is the key you can configure by yourself. By default <Leader> is a `\`(frontslash) key
+
+### Markdown TOC
+
+Just like previous section. Plugin is already installed if you followed Plugin Manager section. To create Tree Of Content that is automarically updating on each save call command `:GenTocGFM`. For other useful command check plugin github repository ([Link](https://github.com/mzlogin/vim-markdown-toc))
+
+### Undo and redo inside interactive mode
+
+This one is pretty interesting. In vim you can customize everything and test it on the fly. E.g this configuration can be pasted into _init.vim_ or typed one by one inside vim to test it only for this one open vim window:
+```bash
+"Mappings
+:inoremap <C-z> <ESC>ui
+:inoremap <C-r> <ESC><C-r>i
+```
+
+With this configuration, `Ctrl+z` in interactive mode will work like in any other modern editor. There are plenty of other options like for example, you can print current time with <F3> - `:nnoremap <F3> :echo system("date")<CR>`
+There are plenty other configuration you can create. It's all up to what works best for you.
+
+> **INFO:** Do not forget about that **i** at the end of command mapping cause, without it you will leave interactive mode.
 
 ### Conclusion
 
