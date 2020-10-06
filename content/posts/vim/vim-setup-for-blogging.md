@@ -1,7 +1,6 @@
 ---
-draft: true
 title: "Customizing neovim for markdown blog post - Mastering Vim 2"
-description: ""
+description: "Some tips how to make vim a better tool for everybody who want to use Vim as a main tool while blogging. It is really powerful tool that will helps you write posts faster than anything. Build in thesaurus? Check. Spellchecking? Check."
 date: 2020-10-05T10:31:11+02:00
 slug: ""
 tags: ["vim"]
@@ -10,11 +9,16 @@ externalLink: ""
 series: []
 disable_comments: true
 ---
+
+Some tips how to make vim a better tool for everybody who want to use Vim as a main tool while blogging. It is really powerful tool that will helps you write posts faster than anything. Build in thesaurus? Check. Spellcheckinig? Check.
+
+Today post will cover a lot of different things, from migrating to neovim to adding spellchecking and even some basic shortcuts to make writing post easier. 
+
 <!-- vim-markdown-toc GFM -->
 
 * [Better version of vim](#better-version-of-vim)
-	* [Basic config](#basic-config)
-	* [Plugin manager](#plugin-manager)
+    * [Basic config](#basic-config)
+    * [Plugin manager](#plugin-manager)
 * [Spellchecker](#spellchecker)
 * [Thesaurus synonyms](#thesaurus-synonyms)
 * [Markdown TOC](#markdown-toc)
@@ -22,10 +26,6 @@ disable_comments: true
 * [Conclusion](#conclusion)
 
 <!-- vim-markdown-toc -->
-
-Today post will cover topic: "Vim for markdown".
-Firstly I will write a bit about neovim, then I will show you few plugins and shortcuts I found very useful for writing post in Markdown
-
 
 ### Better version of vim
 
@@ -51,7 +51,7 @@ set shiftwidth=4
 ```
 With following configuration I don't have to worry about turning on the ruler, or having to manage tab length, which is nice. 
 
-> I will use neovim/vim/nvim interchangeably, as everything here should work on both vim and neovim. However I tested all on neovim.
+> I will use neovim/vim/nvim names interchangeably, as everything here should work on both vim and neovim. However I tested all on neovim.
 
 #### Plugin manager
 As I found out pretty quickly, installing plugins for nVim are quite tedious. Because of that there are many plugins which are making installing plugin a lot easier and faster. I found [vim-plug](https://github.com/junegunn/vim-plug) plugin and stick with it. Installation is easy as writing in the terminal:
