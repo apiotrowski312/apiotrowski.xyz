@@ -1,17 +1,15 @@
 ---
 title: "Customizing neovim for markdown blog post - Mastering Vim 2"
-description: "Some tips how to make vim a better tool for everybody who want to use Vim as a main tool while blogging. It is really powerful tool that will helps you write posts faster than anything. Build in thesaurus? Check. Spellchecking? Check."
+description: "Some tips on how to make vim a better tool for every blog writer. Vim is a really powerful tool that will helps you write posts faster than anything. Thesaurus? Check. Spellchecking? Check."
 date: 2020-10-05T10:31:11+02:00
 slug: ""
 tags: ["vim"]
 categories: ["Vim Adventure"]
 externalLink: ""
-series: []
 disable_comments: true
 ---
 
-Some tips how to make vim a better tool for everybody who want to use Vim as a main tool while blogging. It is really powerful tool that will helps you write posts faster than anything. Build in thesaurus? Check. Spellcheckinig? Check.
-
+Some tips on how to make vim a better tool for every blog writer. Vim is a really powerful tool that will helps you write posts faster than anything. Thesaurus? Check. Spellchecking? Check.
 Today post will cover a lot of different things, from migrating to neovim to adding spellchecking and even some basic shortcuts to make writing post easier. 
 
 <!-- vim-markdown-toc GFM -->
@@ -29,17 +27,17 @@ Today post will cover a lot of different things, from migrating to neovim to add
 
 ### Better version of vim
 
-Vim is really old school text editor that is 28 years old already. On one hand it is mature and battle tested, but on the other hand it lack of feature that in 2020 should be a standard. Because of that I will suggest to check out neovim project. Project started at 2014, by forking vim. It is the same old vim with a lot of modifications and improvements.
+Vim is this old school text editor that nobody want's to use it anymore? Wrong! Maybe vim is 28 years old already, but it is maintained till today and has plenty of fans.
+Vim on one hand it is amature and battle tested project, however in my opinion it lack of some features that in 2020 should be a standard. It is up to you if you want to use Vim, or try refreshed fork from 2014 called neoVim. It is the same old vim with a lot of modifications and improvements.
 
-You should be able to install vim via command line as it is well known and should be in your distro repository:
+You should be able to install noevim via command line as it is well known and should be already in your distro repository:
 ```bash
 sudo apt-get install neovim
 ```
 
 #### Basic config
-Configuration files for neovim can be find in *~/.config/nvim/* directory. For now I am using only the *init.vim* as it is the main source for vim configuration. Syntax is the same as in standard vim configuration. 
+Configuration files for neovim can be find in *~/.config/nvim/* directory. File *init.vim* is the main source for vim configuration. Syntax is the same as in standard vim, so you can use the same file for both versions of vim. 
 
-My bare configuration looked like that:
 ```bash
 set number
 set ruler
@@ -70,9 +68,8 @@ call plug#end()
 ```
 Following lines will inform *vim-plug* you want to install following modules. Save and call `:PlugInstall` and all plugins will be installed
 
-
 ### Spellchecker
-First thing I wanted inside Vim was spellchecker so I will not do any stupid mistake like e.g. Mistkae. Every misspelling will glow on red, when we put cursor on that word we can use `z=` shortcut to open dictionary with plenty of propositions what word it could be.
+First thing I wanted inside Vim was spellchecker so I will not do any stupid mistake like e.g. Mistkae. Every misspelling will glow on red, when we put cursor on that word we can use `z=` shortcut to open dictionary with plenty of propositions how we can fix the mistake.
 
 ![Mistake](/vim/Mistkae.png)
 ![MistakeDist](/vim/MistkaeDict.png)
@@ -92,7 +89,7 @@ First two lines are require to spellchecker work, last line was added to customi
 
 ### Thesaurus synonyms
 
-After installing plugin (Already done in Plugin Manager step) the only think you need to know are shortcuts:
+After installing plugin (Already done in Plugin Manager step) the only thing you need to know are shortcuts:
 ```bash
 <Leader>cs
 ```
@@ -102,7 +99,7 @@ After installing plugin (Already done in Plugin Manager step) the only think you
 
 ### Markdown TOC
 
-Just like previous section. Plugin is already installed if you followed Plugin Manager section. To create Tree Of Content that is automarically updating on each save call command `:GenTocGFM`. For other useful command check plugin github repository ([Link](https://github.com/mzlogin/vim-markdown-toc))
+Just like previous section. Plugin is already installed if you followed Plugin Manager section. To create Tree Of Content that is automagically updating on each save, call command `:GenTocGFM`. For other useful command check plugin github repository ([Link](https://github.com/mzlogin/vim-markdown-toc))
 
 ### Undo and redo inside interactive mode
 
@@ -120,5 +117,5 @@ There are plenty other configuration you can create. It's all up to what works b
 
 ### Conclusion
 
-Previous part can be found [here](https://apiotrowski.xyz/posts/vim/start-of-the-great-adventure/). It was about how I come up with this idea. That's all
+If you want to know how and why I come up with idea of this challenge check my previous post [here](https://apiotrowski.xyz/posts/vim/start-of-the-great-adventure/). 
 
