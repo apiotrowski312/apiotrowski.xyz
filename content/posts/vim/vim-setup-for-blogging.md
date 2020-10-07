@@ -1,7 +1,7 @@
 ---
-title: "Customizing neovim for markdown blog post - Mastering Vim 2"
-description: "Some tips on how to make vim a better tool for every blog writer. Vim is a really powerful tool that will helps you write posts faster than anything. Thesaurus? Check. Spellchecking? Check."
-date: 2020-10-05T10:31:11+02:00
+title: "Customizing Vim for markdown blog post - Mastering Vim 2"
+description: "Some tips on how to make Vim a better tool for every blog writer. Vim is a really powerful tool that will help you write posts faster than anything. Thesaurus? Check. Spellchecking? Check."
+date: 2020-10-07T10:31:11+02:00
 slug: ""
 tags: ["vim"]
 categories: ["Vim Adventure"]
@@ -9,13 +9,13 @@ externalLink: ""
 disable_comments: true
 ---
 
-Some tips on how to make vim a better tool for every blog writer. Vim is a really powerful tool that will helps you write posts faster than anything. Thesaurus? Check. Spellchecking? Check.
-Today post will cover a lot of different things, from migrating to neovim to adding spellchecking and even some basic shortcuts to make writing post easier. 
+Some tips on how to make Vim a better tool for every blog writer. Vim is a really powerful tool that will help you write posts faster than anything. Thesaurus? Check. Spellchecking? Check.
+Todays post will cover a lot of different things, from migrating to neovim, to adding spellchecking and even some basic shortcuts to make writing posts easier. 
 
-<!-- vim-markdown-toc GFM -->
+<!-- Vim-markdown-toc GFM -->
 
-* [Better version of vim](#better-version-of-vim)
-    * [Basic config](#basic-config)
+* [Better Vim version](#better-vim-version)
+    * [Basic configuration](#basic-configuration)
     * [Plugin manager](#plugin-manager)
 * [Spellchecker](#spellchecker)
 * [Thesaurus synonyms](#thesaurus-synonyms)
@@ -23,20 +23,20 @@ Today post will cover a lot of different things, from migrating to neovim to add
 * [Undo and redo inside interactive mode](#undo-and-redo-inside-interactive-mode)
 * [Conclusion](#conclusion)
 
-<!-- vim-markdown-toc -->
+<!-- Vim-markdown-toc -->
 
-### Better version of vim
+### Better Vim version 
 
-Vim is this old school text editor that nobody want's to use it anymore? Wrong! Maybe vim is 28 years old already, but it is maintained till today and has plenty of fans.
-Vim on one hand it is amature and battle tested project, however in my opinion it lack of some features that in 2020 should be a standard. It is up to you if you want to use Vim, or try refreshed fork from 2014 called neoVim. It is the same old vim with a lot of modifications and improvements.
+Vim is this old school text editor that nobody wants to use anymore? Wrong! Maybe Vim is 28 years old already, but it is maintained till today and has plenty of fans.
+Vim on one hand is a mature and battle tested project, however in my opinion it lacks some features that should be a standard in 2020. It is up to you, if you want to use Vim, or try refreshed fork from 2014 called neoVim. It is the same old Vim with a lot of modifications and improvements.
 
 You should be able to install noevim via command line as it is well known and should be already in your distro repository:
 ```bash
 sudo apt-get install neovim
 ```
 
-#### Basic config
-Configuration files for neovim can be find in *~/.config/nvim/* directory. File *init.vim* is the main source for vim configuration. Syntax is the same as in standard vim, so you can use the same file for both versions of vim. 
+#### Basic configuration 
+Configuration files for neovim can be found in *~/.config/nvim/* directory. File *init.vim* is the main source for Vim configuration. Syntax is the same as in standard Vim, so you can use the same file for both versions of Vim. 
 
 ```bash
 set number
@@ -47,18 +47,18 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 ```
-With following configuration I don't have to worry about turning on the ruler, or having to manage tab length, which is nice. 
+With following configuration I don't have to worry about turning on the ruler, or having to manage tab length every time I open the editor, which is nice. 
 
-> I will use neovim/vim/nvim names interchangeably, as everything here should work on both vim and neovim. However I tested all on neovim.
+> I will use neovim/vim/nvim names interchangeably, as everything should work on both Vim and neovim. However I tested all on neovim.
 
 #### Plugin manager
-As I found out pretty quickly, installing plugins for nVim are quite tedious. Because of that there are many plugins which are making installing plugin a lot easier and faster. I found [vim-plug](https://github.com/junegunn/vim-plug) plugin and stick with it. Installation is easy as writing in the terminal:
+As I found out pretty quickly, installing plugins for nVim is quite tedious. Because of that there are many add-ons which are making installing plugin a lot easier and faster. I found [vim-plug](https://github.com/junegunn/vim-plug) and stuck with it. Installation is easy as writing in the terminal:
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
-After installation you have to create directory `mkdir ~/.config/nvim/plugged` if it's not there already (as in my case, lack of this directory will cause error). When this is in place, you have to paste following into *init.vim* file:
+After installation you have to create a directory `mkdir ~/.config/nvim/plugged` if it's not there already (as in my case, lack of this directory will cause error). When it is in place, you have to paste following code into *init.vim* file:
 ```bash
 call plug#begin()
 Plug 'ron89/thesaurus_query.vim'
@@ -66,10 +66,10 @@ Plug 'mzlogin/vim-markdown-toc'
 MORE PLUGINS HERE
 call plug#end()
 ```
-Following lines will inform *vim-plug* you want to install following modules. Save and call `:PlugInstall` and all plugins will be installed
+Following lines will inform *vim-plug* that you want to install two modules. Save and call `:PlugInstall` and add-ons will be installed.
 
 ### Spellchecker
-First thing I wanted inside Vim was spellchecker so I will not do any stupid mistake like e.g. Mistkae. Every misspelling will glow on red, when we put cursor on that word we can use `z=` shortcut to open dictionary with plenty of propositions how we can fix the mistake.
+First thing I wanted inside Vim was a spellchecker so I will not do any stupid mistakes like e.g. Mistkae. Every misspelling will glow, when we navigate our cursor over that word, we can use `z=` shortcut to open a dictionary with plenty of propositions on how we can fix the mistake.
 
 ![Mistake](/vim/Mistkae.png)
 ![MistakeDist](/vim/MistkaeDict.png)
@@ -79,31 +79,31 @@ Another useful shortcuts are:
 - `zw` `zuw` `zg` `zug` - add/remove word from wrong/good word list
 If you want to learn more commands for this tool, just use `:help spell` to call manual. 
 
-Spell utility doesn't require any plugin as it is build into nvim, just paste those three lines into *init.vim*
+Spell utility doesn't require any plugins as it is build into nvim; Just paste those three lines into *init.vim*
 ```bash
 autocmd FileType markdown setlocal spell
 set spelllang=en
 hi SpellBad ctermfg=white ctermbg=red
 ```
-First two lines are require to spellchecker work, last line was added to customize how mistakes look inside editor. By default errors in my neovim were highlighted with pink/purple color and I find the red highlight more readable for me.
+First two lines are required for the spellchecker to work, last line was added to customize how mistakes look inside the editor. By default errors in my neovim were highlighted with pink/purple color. However I find the red highlight more readable.
 
 ### Thesaurus synonyms
 
-After installing plugin (Already done in Plugin Manager step) the only thing you need to know are shortcuts:
+After installing the plugin (Already done in Plugin Manager step) the only thing you need to know is the following shortcut:
 ```bash
 <Leader>cs
 ```
 
 > **INFO**:
-> Leader is the key you can configure by yourself. By default <Leader> is a `\`(frontslash) key
+> Leader is a key you can configure by yourself. By default <Leader> is a `\`(frontslash) key
 
 ### Markdown TOC
 
-Just like previous section. Plugin is already installed if you followed Plugin Manager section. To create Tree Of Content that is automagically updating on each save, call command `:GenTocGFM`. For other useful command check plugin github repository ([Link](https://github.com/mzlogin/vim-markdown-toc))
+Just like previous section. Plugin is already installed if you followed Plugin Manager section. To create Tree Of Content that is automagically updating on each save, call command `:GenTocGFM`. For other useful commands check plugin github repository ([Link](https://github.com/mzlogin/vim-markdown-toc))
 
 ### Undo and redo inside interactive mode
 
-This one is pretty interesting. In vim you can customize everything and test it on the fly. E.g this configuration can be pasted into _init.vim_ or typed one by one inside vim to test it only for this one open vim window:
+This one is pretty interesting. In Vim you can customize everything and test it on the fly. E.g this configuration can be pasted into _init.vim_ to have it permanently or typed inside Vim to test only for this session:
 ```bash
 "Mappings
 :inoremap <C-z> <ESC>ui
@@ -111,11 +111,12 @@ This one is pretty interesting. In vim you can customize everything and test it 
 ```
 
 With this configuration, `Ctrl+z` in interactive mode will work like in any other modern editor. There are plenty of other options like for example, you can print current time with <F3> - `:nnoremap <F3> :echo system("date")<CR>`
-There are plenty other configuration you can create. It's all up to what works best for you.
+There are plenty other configurations you can create. It's all up to what works best for you.
 
-> **INFO:** Do not forget about that **i** at the end of command mapping cause, without it you will leave interactive mode.
+> **INFO:** Do not forget about that **i** at the end of mapping command because, without it you will leave interactive mode.
 
-### Conclusion
 
-If you want to know how and why I come up with idea of this challenge check my previous post [here](https://apiotrowski.xyz/posts/vim/start-of-the-great-adventure/). 
+----
+
+**PS:** If you want to know how and why I came up with an idea of this challenge, check my previous post [here](https://apiotrowski.xyz/posts/vim/start-of-the-great-adventure/). 
 

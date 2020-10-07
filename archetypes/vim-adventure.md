@@ -6,7 +6,6 @@ slug: ""
 tags: ["vim"]
 categories: ["Vim Adventure"]
 externalLink: ""
-series: []
 disable_comments: true
 ---
 
