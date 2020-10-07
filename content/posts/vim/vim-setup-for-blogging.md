@@ -21,7 +21,6 @@ Todays post will cover a lot of different things, from migrating to neovim, to a
 * [Thesaurus synonyms](#thesaurus-synonyms)
 * [Markdown TOC](#markdown-toc)
 * [Undo and redo inside interactive mode](#undo-and-redo-inside-interactive-mode)
-* [Conclusion](#conclusion)
 
 <!-- Vim-markdown-toc -->
 
