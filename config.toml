@@ -1,46 +1,31 @@
 baseurl = "https://apiotrowski.xyz"
 title = "Aleksander Piotrowski"
-theme = "hugo-coder"
+theme = "tale"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
-dateformat = "02.01.2006"
-
 paginate = 20
 
-[params]
-    author = "Aleksander Piotrowski"
-    info = "DevOps/System Engineer with some Golang skills"
-    description = "Personal site. I am writing mainly about Linux, Contenerization and Golang topics."
-    keywords = "blog,developer,golang,linux"
-    avatarurl = "images/AleksanderPiotrowski.jpg"
+[Author]
+    name = "Aleksander Piotrowski"
 
-    favicon_32 = "/img/favicon-32x32.png"
-    favicon_16 = "/img/favicon-16x16.png"
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "About"
+    url = "/about/"
+    weight = 0
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    title = "Posts"
+    url = "/posts/"
+    weight = 0
+#  [[menu.main]]
+#    identifier = "tags"
+#    name = "Tags"
+#    title = "Tags"
+#    url = "/tags/"
+#    weight = 0
 
-    footercontent = ""
-
-    hidecredits = false
-    hidecopyright = false
-
-    rtl = false
-
-    math = false
-
-# Social links
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github fa-2x"
-    weight = 1
-    url = "https://github.com/apiotrowski312/"
-[[params.social]]
-    name = "Linkedin"
-    icon = "fab fa-linkedin fa-2x"
-    weight = 3
-    url = "https://www.linkedin.com/in/aleksander-piotrowski-266a8519b/"
-
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"

@@ -1,11 +1,10 @@
 ---
 draft: false
-title: "The start of a Great Adventure - Mastering vim - part 1"
-description: "Introduction to my Vim learning blog post series"
-date: 2020-10-01T16:24:48+02:00
+title: "Mastering vim - introduction"
+summary: "Introduction to my Vim learning blog post series. **Note**: This post is more of a personal note than tutorial, if you want to learn about vim, checkout other posts."
+date: 2020-10-01
 slug: ""
-tags: ["vim"]
-categories: ["Vim Adventure"]
+tags: ["vim",  "Vim Adventure"]
 externalLink: ""
 disable_comments: true
 ---

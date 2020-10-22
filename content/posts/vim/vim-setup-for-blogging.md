@@ -1,10 +1,9 @@
 ---
-title: "Customizing Vim for markdown blog post - Mastering Vim 2"
-description: "Some tips on how to make Vim a better tool for every blog writer. Vim is a really powerful tool that will help you write posts faster than anything. Thesaurus? Check. Spellchecking? Check."
-date: 2020-10-07T10:31:11+02:00
+title: "Blogging with Vim. Starter pack."
+summary: "Some tips on how to make Vim a better tool for every blog writer. Vim is a really powerful tool that will help you write posts faster than anything. Thesaurus? Check. Spellchecking? Check."
+date: 2020-10-07
 slug: ""
-tags: ["vim"]
-categories: ["Vim Adventure"]
+tags: ["vim", "Vim Adventure"]
 externalLink: ""
 disable_comments: true
 ---
