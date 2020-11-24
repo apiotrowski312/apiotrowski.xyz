@@ -10,7 +10,7 @@ disable_comments: true
 ---
 
 # Golang + Vim
-Is Golang + Vim worth trying? Definitely, developing application with this combination is cool experience. However I tried using it for bigger projects(Bugfix for docker-cli) and that wasn't that pleasing, I felt a bit lost and tired of all of that shortcuts and jumping between files, I think it my be better experience after I get more experience with Vim. Below I am showing how to setup Vim for Go programming. It's my first attempt so it may be still lacking some features :D 
+Is Golang + Vim worth trying? Definitely, developing application with this combination is cool experience. However I tried using it on bigger project (I was doing bugfix on docker-cli) and that wasn't that pleasing, I felt a bit lost and tired of all of that shortcuts and jumping between files, I think it my be better experience after I get more experience with Vim. Below I am showing how to setup Vim for Go programming. It's my first attempt so it may be still lacking some features :D 
 
 
 <!-- vim-markdown-toc GFM -->
