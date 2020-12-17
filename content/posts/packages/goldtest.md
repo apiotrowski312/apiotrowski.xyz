@@ -85,3 +85,4 @@ AssertJSON function works based on Marshal function. There is two possible ways 
 ## Further reading
 - https://ieftimov.com/post/testing-in-go-golden-files/
 - https://medium.com/@jarifibrahim/golden-files-why-you-should-use-them-47087ec994bf
+- https://github.com/apiotrowski312/goldtest
