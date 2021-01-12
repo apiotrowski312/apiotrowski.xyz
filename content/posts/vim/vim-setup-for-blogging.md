@@ -13,13 +13,13 @@ Todays post will cover a lot of different things, from migrating to neovim, to a
 
 <!-- Vim-markdown-toc GFM -->
 
-* [Better Vim version](#better-vim-version)
-    * [Basic configuration](#basic-configuration)
-    * [Plugin manager](#plugin-manager)
-* [Spellchecker](#spellchecker)
-* [Thesaurus synonyms](#thesaurus-synonyms)
-* [Markdown TOC](#markdown-toc)
-* [Undo and redo inside interactive mode](#undo-and-redo-inside-interactive-mode)
+- [Better Vim version](#better-vim-version)
+  - [Basic configuration](#basic-configuration)
+  - [Plugin manager](#plugin-manager)
+- [Spellchecker](#spellchecker)
+- [Thesaurus synonyms](#thesaurus-synonyms)
+- [Markdown TOC](#markdown-toc)
+- [Undo and redo inside interactive mode](#undo-and-redo-inside-interactive-mode)
 
 <!-- Vim-markdown-toc -->
 
@@ -69,8 +69,8 @@ Following lines will inform *vim-plug* that you want to install two modules. Sav
 ### Spellchecker
 First thing I wanted inside Vim was a spellchecker so I will not do any stupid mistakes like e.g. Mistkae. Every misspelling will glow, when we navigate our cursor over that word, we can use `z=` shortcut to open a dictionary with plenty of propositions on how we can fix the mistake.
 
-![Mistake](/vim/Mistkae.png)
-![MistakeDist](/vim/MistkaeDict.png)
+![Mistake](../vim/Mistkae.png)
+![MistakeDist](../vim/MistkaeDict.png)
 
 Another useful shortcuts are:
 - `]s` and `[s`. They will move your cursor to next/prev mistake. 

@@ -9,7 +9,7 @@ externalLink: ""
 disable_comments: true
 ---
 
-![Vim-the-editor](/vim/vim-the-editor.jpg)
+![Vim-the-editor](../vim/vim-the-editor.jpg)
 
 **Hi!** This is my very first blog post over here as I am starting my very first challenge, that I would love to keep track of. The challenge is... Mastering Vim editor. When I firstly saw Vim I wasn't a big fun of it, it felt unnecessarily hard and clumsy. As I was working more and more with Linux servers, I found out this tool is a lot more handy than e.g. nano, so I learned some basic Vim stuff, few shortcuts that made my life as a System Engineer easier. 
 
