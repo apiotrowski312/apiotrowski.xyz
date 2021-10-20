@@ -1,31 +1,66 @@
-baseurl = "https://apiotrowski.xyz"
-title = "Aleksander Piotrowski"
-theme = "tale"
-languagecode = "en"
-defaultcontentlanguage = "en"
+baseURL = "https://apiotrowski.xyz"
+languageCode = "en-us"
+title = "Simple Blog"
+theme = "noteworthy"
+enableRobotsTXT = true
+paginate = 10
+summaryLength = 10
 
-paginate = 20
+[taxonomies]
+  tag = "tags"
 
-[Author]
+[author]
     name = "Aleksander Piotrowski"
 
-[menu]
-  [[menu.main]]
+# Set to false to disallow raw HTML in markdown files
+[markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+    math = true
+    description = "Minimalist blog about stuff I learned over the time."
+
+    linkedin = "https://www.linkedin.com/in/aleksander-piotrowski-266a8519b/"
+
+    # Writing
+    medium = "https://medium.com/@apiotrowski312"
+
+    # Programming
+    github = "https://github.com/apiotrowski312/"
+
+# Menu links along the sidebar navigation.
+[[menu.main]]
     identifier = "about"
     name = "About"
-    title = "About"
     url = "/about/"
-    weight = 0
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    title = "Posts"
-    url = "/posts/"
-    weight = 0
-#  [[menu.main]]
-#    identifier = "tags"
-#    name = "Tags"
-#    title = "Tags"
-#    url = "/tags/"
-#    weight = 0
+    weight = 1 # Weight is an integer used to sort the menu items. The sorting goes from smallest to largest numbers. If weight is not defined for each menu entry, Hugo will sort the entries alphabetically.
 
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+[[menu.main]]
+    name = "Archives"
+    identifier = "archives"
+    url = "/archives/"
+    weight = 3
+
+# Privacy configurations: https://gohugo.io/about/hugo-and-gdpr/
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.instagram]
+    disable = true
+    simple = false
+  [privacy.twitter]
+    disable = true
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = true
+    simple = false
+  [privacy.youtube]
+    disable = true
+    privacyEnhanced = true

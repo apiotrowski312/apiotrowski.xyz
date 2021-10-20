@@ -1,11 +1,9 @@
 ---
 title: "Blogging with Vim. Starter pack."
-summary: "Some tips on how to make Vim a better tool for every blog writer. Vim is a really powerful tool that will help you write posts faster than anything. Thesaurus? Check. Spellchecking? Check."
+description: "Some tips on how to make Vim a better tool for every blog writer. Vim is a really powerful tool that will help you write posts faster than anything. Thesaurus? Check. Spellchecking? Check."
 date: 2020-10-07
-slug: ""
-tags: ["vim", "Vim Adventure"]
-externalLink: ""
-disable_comments: true
+tags:
+- "vim"
 ---
 
 Some tips on how to make Vim a better tool for every blog writer. Vim is a really powerful tool that will help you write posts faster than anything. Thesaurus? Check. Spellchecking? Check.
@@ -69,8 +67,8 @@ Following lines will inform *vim-plug* that you want to install two modules. Sav
 ### Spellchecker
 First thing I wanted inside Vim was a spellchecker so I will not do any stupid mistakes like e.g. Mistkae. Every misspelling will glow, when we navigate our cursor over that word, we can use `z=` shortcut to open a dictionary with plenty of propositions on how we can fix the mistake.
 
-![Mistake](../vim/Mistkae.png)
-![MistakeDist](../vim/MistkaeDict.png)
+![Mistake](/vim/Mistkae.png)
+![MistakeDist](/vim/MistkaeDict.png)
 
 Another useful shortcuts are:
 - `]s` and `[s`. They will move your cursor to next/prev mistake. 
@@ -112,9 +110,3 @@ With this configuration, `Ctrl+z` in interactive mode will work like in any othe
 There are plenty other configurations you can create. It's all up to what works best for you.
 
 > **INFO:** Do not forget about that **i** at the end of mapping command because, without it you will leave interactive mode.
-
-
-----
-
-**PS:** If you want to know how and why I came up with an idea of this challenge, check my previous post [here](https://apiotrowski.xyz/posts/vim/start-of-the-great-adventure/). 
-

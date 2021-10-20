@@ -1,12 +1,10 @@
 ---
-draft: false
 title: "Basic setup for Go with Vim"
-summary: "Is Vim a good tool for developing golang applications? Sure, it may not be the best choice, but at the same time it is really fun to work this way, you will feel a bit like those cool hackers in a movies, which is nice."
-date: 2020-11-23
-slug: ""
-tags: ["vim",  "Vim Adventure", "go"]
-externalLink: ""
-disable_comments: true
+description: "Is Vim a good tool for developing golang applications? Sure, it may not be the best choice, but at the same time it is really fun to work this way, you will feel a bit like those cool hackers in a movies, which is nice."
+date: "2020-11-23"
+tags:
+- "vim"
+- "go"
 ---
 
 # Golang + Vim
