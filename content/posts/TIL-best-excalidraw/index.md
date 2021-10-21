@@ -6,7 +6,6 @@ tags:
 - "open-source"
 - "tooling"
 - "TIL"
-draft: true
 ---
 
 # Today I Learned

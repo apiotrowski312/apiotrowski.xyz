@@ -1,6 +1,6 @@
 baseURL = "https://apiotrowski.xyz"
 languageCode = "en-us"
-title = "Simple Blog"
+title = "IT Minimalist Blog"
 theme = "noteworthy"
 enableRobotsTXT = true
 paginate = 10
