@@ -1,7 +1,10 @@
 ---
 title: "TIL: Initialize Postgres Database with JSON"
 date: 2021-10-31
-draft: true
+description: "Loading and processing JSON from file to destined Table."
+tags:
+- "TIL"
+- "postgres"
 ---
 
 {{< resize-image src="postgresql.jpg" alt="PostgreSQL Elephant logo">}}
