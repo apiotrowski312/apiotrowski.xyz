@@ -18,7 +18,7 @@ summaryLength = 10
 
 [params]
     math = true
-    description = "Minimalist blog about stuff I learned over the time."
+    description = "Minimalist blog with stuff I found interesting enough to put here"
 
     linkedin = "https://www.linkedin.com/in/aleksander-piotrowski-266a8519b/"
 
