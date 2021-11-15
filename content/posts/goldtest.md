@@ -8,7 +8,7 @@ tags:
 - "unit testing"
 ---
 
-## What is golden file testing? 
+## What is golden file testing?
 
 With usual unit tests, you write down expected output into unit test (as showed below). This way is perfectly fine and works really good most of the time. However, in my last project I had to use custom big data structure (hundreds nodes in tree), and then I asked myself, how should I test the CreateTree() function? Writing down expected output would be tedious. That is where golden file testing comes handy. You don't need to write any expected output down, every test case has separate file with expected output. Golden files are stored in a chosen directory (Usually directory is next to test file with name "testdata").
 
