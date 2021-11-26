@@ -106,4 +106,7 @@ Middlewares are really handy tools, so I hope this article helped you a bit and 
 
 ### Random wisdom
 
-Did you know that on average twelve newborn babies are given to wrong parents everyday in hospitals?
+There are more trees on Earth than stars in our galaxy.
+
+- https://www.plant-for-the-planet.org/media/files/press/27fbf376-nydailynews-there-are-more-trees-on-earth-than-anyone-thought.pdf
+- https://www.snopes.com/fact-check/trees-stars-milky-way/
