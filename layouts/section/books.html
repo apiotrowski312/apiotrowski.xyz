@@ -1,25 +1,20 @@
 {{ define "main" }}
-<!-- All of the site's posts grouped by year -->
 <h1>
-  Books
+  Books that I can recommend
 </h1>
+
 <div>
-  <!-- Group all the post pages from the same year -->
-  {{ $pages := .Pages }}
-  {{ range ($pages.GroupByDate "2006") }}
-  <h3>{{ .Key }}</h3> <!-- Display the year -->
-
   <ul class="archives-list">
-
+    {{ $pages := .Pages }}
+    {{ range ($pages.GroupByDate "2006") }}
     {{ range (.Pages) }}
-
     <li class="archives-list-item">
       <span><i>{{ .Params.Author }}</i> - {{ .Title }}</a>
       </span>
     </li>
     {{ end }}
+    {{ end }}
   </ul>
-  {{ end }}
 </div>
 
 <div class="page-footer"></div>
