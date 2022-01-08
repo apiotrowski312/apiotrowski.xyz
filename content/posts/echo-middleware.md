@@ -7,7 +7,7 @@ tags:
 - "go"
 ---
 
-In this a short article, as I wanted to share with you an ideal use-case for a middleware.
+In this a short article, I wanted to share with you an ideal use-case for a middleware.
 
 Middleware is a function that runs between user requests and applications code. It can do whatever you code it to do. In my example it will authenticate the user and pass custom context to an actual micro-service. This way there is no need for special logic in a service to handle auth and it will already have all the information it needs for it to work.
 
