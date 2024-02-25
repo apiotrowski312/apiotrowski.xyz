@@ -91,6 +91,7 @@ The AssertJSON function, on the other hand, leverages Go's Marshal function to g
 There are two possible ways to test all data you want. You can export every field that you want to test with goldenfile. Other way is to create your own Marshal function (Example [HERE](http://choly.ca/post/go-json-marshalling/) and [HERE](https://medium.com/@dynastymasra/override-json-marshalling-in-go-cb418102c60f)).
 
 ## Further reading
+
 - [https://ieftimov.com/post/testing-in-go-golden-files/](https://ieftimov.com/post/testing-in-go-golden-files/)
 - [https://medium.com/@jarifibrahim/golden-files-why-you-should-use-them-47087ec994bf](https://medium.com/@jarifibrahim/)golden-files-why-you-should-use-them-47087ec994bf
 - [https://github.com/apiotrowski312/goldtest](https://github.com/apiotrowski312/goldtest)

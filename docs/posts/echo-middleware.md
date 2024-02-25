@@ -108,5 +108,6 @@ Middleware proves to be an invaluable tool, simplifying complex tasks such as au
 ### Bonus Trivia
 
 Did you know there are more trees on Earth than stars in our galaxy? Check out these sources for more fascinating insights:
+
 - [Plant-for-the-Planet Study](https://www.plant-for-the-planet.org/media/files/press/27fbf376-nydailynews-there-are-more-trees-on-earth-than-anyone-thought.pdf)
 - [Snopes Fact Check](https://www.snopes.com/fact-check/trees-stars-milky-way/)

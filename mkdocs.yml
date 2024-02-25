@@ -1,4 +1,4 @@
-site_name: Piotrowski Blog
+site_name: apiotrowski.xyz
 site_url: https://apiotrowski.xyz
 
 theme:
@@ -11,9 +11,7 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - navigation.footer
-  palette:
-    primary: custom
-    accent: green
+  palette: {}
   custom_dir: overrides
   
 extra_css:
@@ -35,6 +33,6 @@ extra:
     property: https://apiotrowski312.goatcounter.com/count
 
 nav:
-  - Blog:
+  - Home:
     - index.md
   - About: about.md

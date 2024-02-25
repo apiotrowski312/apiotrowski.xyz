@@ -1,4 +1,4 @@
-# apiotrowski.xyz
+# [apiotrowski.xyz](https://apiotrowski.xyz/)
 
 ## Development
 
@@ -8,8 +8,7 @@ Install tool and theme:
 pip install mkdocs mkdocs-material
 ```
 
-Deploy:
+### Deploy
 
-```
-mkdocs gh-deploy
-```
+Auto deploy to netlify. 
+
