@@ -31,25 +31,6 @@ extra:
   analytics:
     provider: custom
     property: https://apiotrowski312.goatcounter.com/count
-  consent:
-    title: Tracking consent
-    description: >- 
-      I use GoatCounter.com to count unique visitors. Following information might be stored:
-      URL of the visited page. 
-      Referer header. 
-      Browser and system information (derived from User-Agent header or HTTP client hints; the original headers are not stored). 
-      Screen size. Country and region name derived from the IP address. 
-      The browser language derived from the Accept-Language header. 
-    analytics:
-      name: GoatCounter.com
-      checked: true
-    actions:
-      - accept
-      - reject
-
-copyright: >
-  Copyright &copy; 2024 Aleksander Piotrowski –
-  <a href="#__consent">Change tracking settings</a>
 
 nav:
   - Home:
