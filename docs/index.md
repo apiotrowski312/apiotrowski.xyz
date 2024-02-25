@@ -1,0 +1,6 @@
+---
+hide:
+  - footer
+---
+
+# New posts
