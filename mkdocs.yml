@@ -1,6 +1,10 @@
 site_name: apiotrowski.xyz
 site_url: https://apiotrowski.xyz
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
 theme:
   name: material
   logo: assets/favicon.png
