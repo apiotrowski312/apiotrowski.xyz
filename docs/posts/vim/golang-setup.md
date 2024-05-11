@@ -60,7 +60,7 @@ With those two plugins my developer experience was quite good, but as I wrote at
 
 ## Further reading
 
-- Vim for blogging. This setup is great for anybody who like to write blog posts in markdown. I am a big fun of this setup. Read more [HERE](/posts/vim/vim-setup-for-blogging/) 
+- Vim for blogging. This setup is great for anybody who like to write blog posts in markdown. I am a big fun of this setup. Read more [HERE](./setup-for-bloggers.md) 
 - Good tutorial with basic NerdTree functionality - [medium](https://medium.com/usevim/nerd-tree-guide-bb22c803dcd2)
 - NERDTree github, best source of NERDTree knowledge - [link](https://github.com/preservim/nerdtree)
 - Why I changed to goimports - [link to github issue](https://github.com/fatih/vim-go/issues/207)

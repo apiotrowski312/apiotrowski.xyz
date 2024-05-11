@@ -3,7 +3,7 @@ authors:
     - piotrowski
 date: 2020-12-17
 categories:
-    - go
+    - Go
 ---
 
 # Golden File Testing in Go
