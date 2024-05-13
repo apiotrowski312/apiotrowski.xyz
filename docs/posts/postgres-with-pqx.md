@@ -33,16 +33,15 @@ CREATE TYPE category_type AS ENUM (
 When you are only using connection try below code after you connect
 
 ```
-t, err := conn.LoadType(context.Background(), "category_type")
+t, err := conn.LoadType(ctx, "category_type")
 if err != nil {
-    return fmt.Errorf("could not load type: %w", err)
+	return fmt.Errorf("could not load type: %w", err)
 }
 conn.TypeMap().RegisterType(t)
 
-// underscore prefix means it is an array 
-t, err = conn.LoadType(context.Background(), "_category_type")
+t, err = conn.LoadType(ctx, "_category_type")
 if err != nil {
-    return fmt.Errorf("could not load type: %w", err)
+	return fmt.Errorf("could not load type: %w", err)
 }
 conn.TypeMap().RegisterType(t)
 ```
@@ -53,26 +52,29 @@ When you are using connection pool fix is similar. It is impossible to load type
 
 ```
 config, err := pgxpool.ParseConfig(uri)
-	config.AfterConnect = func(ctx context.Context, conn *pgx.Conn) error {
-		t, err := conn.LoadType(context.Background(), "category_type")
-		if err != nil {
-			return fmt.Errorf("could not load type: %w", err)
-		}
-		conn.TypeMap().RegisterType(t)
-
-		t, err = conn.LoadType(context.Background(), "_category_type")
-		if err != nil {
-			return fmt.Errorf("could not load type: %w", err)
-		}
-		conn.TypeMap().RegisterType(t)
-
-		return nil
-	}
-
-	pool, err := pgxpool.NewWithConfig(context.Background(), config)
+config.AfterConnect = func(ctx context.Context, conn *pgx.Conn) error {
+	t, err := conn.LoadType(ctx, "category_type")
 	if err != nil {
-		return nil, fmt.Errorf("could not create pool: %w", err)
+		return fmt.Errorf("could not load type: %w", err)
 	}
+	conn.TypeMap().RegisterType(t)
+
+	t, err = conn.LoadType(ctx, "_category_type")
+	if err != nil {
+		return fmt.Errorf("could not load type: %w", err)
+	}
+	conn.TypeMap().RegisterType(t)
+
+	return nil
+}
+if err != nil {
+	return nil, fmt.Errorf("could not parse config: %w", err)
+}
+
+pool, err := pgxpool.NewWithConfig(context.Background(), config)
+if err != nil {
+	return nil, fmt.Errorf("could not create pool: %w", err)
+}
 ```
 
 ---
